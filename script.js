@@ -1,4 +1,4 @@
-// OCULTAR TODOS LOS TEMAS AL INICIO
+// OCULTAR TODOS LOS TEMAS
 
 const temas = document.querySelectorAll(".pantalla-tema");
 
@@ -30,19 +30,17 @@ function mostrarTema(idTema){
     // OCULTAR MENU
     document.getElementById("menu").style.display = "none";
 
-    // OCULTAR TODOS LOS TEMAS
+    // OCULTAR TODOS
     temas.forEach(tema => {
 
         tema.style.display = "none";
 
     });
 
-    // MOSTRAR EL TEMA SELECCIONADO
-    const temaSeleccionado = document.getElementById(idTema);
+    // MOSTRAR SELECCIONADO
+    document.getElementById(idTema).style.display = "flex";
 
-    temaSeleccionado.style.display = "flex";
-
-    // SUBIR ARRIBA
+    // IR ARRIBA
     window.scrollTo({
         top: 0,
         behavior: "instant"
@@ -51,7 +49,7 @@ function mostrarTema(idTema){
 }
 
 
-// REGRESAR AL MENU
+// REGRESAR MENU
 
 function volverMenu(){
 
@@ -68,10 +66,9 @@ function volverMenu(){
 
     });
 
-    // IR AL MENU
+    // BAJAR MENU
     document.getElementById("menu").scrollIntoView({
         behavior: "smooth"
     });
 
 }
-
