@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Economía y Política en México</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+
+        <div class="hero-contenido">
+
+            <h1>Economía y Política en México</h1>
+
+            <p>
+                Investigación interactiva sobre economía,
+                política y sociedad mexicana.
+            </p>
+
+            <button class="btn" onclick="irMenu()">
+                Ver Temas
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+
+        <h2>Selecciona un Tema</h2>
+
+        <div class="contenedor-menu">
+
+            <div class="tema" onclick="mostrarTema('comercio')">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Comercio Exterior</h3>
+            </div>
+
+            <div class="tema" onclick="mostrarTema('balanza')">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Balanza de Pagos</h3>
+            </div>
+
+            <div class="tema" onclick="mostrarTema('gasto')">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <h3>Gasto y Déficit</h3>
+            </div>
+
+            <div class="tema" onclick="mostrarTema('inflacion')">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h3>Inflación y Deflación</h3>
+            </div>
+
+            <div class="tema" onclick="mostrarTema('constitucion')">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <h3>Constitución</h3>
+            </div>
+
+            <div class="tema" onclick="mostrarTema('situacion')">
+                <i class="fa-solid fa-building-columns"></i>
+                <h3>Situación Política</h3>
+            </div>
+
+            <div class="tema" onclick="mostrarTema('partidos')">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Partidos Políticos</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TEMAS -->
+
+    <!-- COMERCIO -->
+    <section class="pantalla-tema oculto" id="comercio">
+
+        <div class="contenido">
+
+            <h2>3.1 Comercio Exterior</h2>
+
+            <div class="imagenes">
+
+                <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop">
+
+                <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop">
+
+            </div>
+
+            <p>
+                El comercio exterior consiste en el intercambio de productos y servicios
+                entre diferentes países. México exporta automóviles, petróleo,
+                productos agrícolas y electrónicos.
+            </p>
+
+            <p>
+                También importa tecnología, maquinaria y materias primas para
+                fortalecer la economía nacional.
+            </p>
+
+            <button class="btn-regresar" onclick="volverMenu()">
+                Regresar al Menú
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- BALANZA -->
+    <section class="pantalla-tema oculto" id="balanza">
+
+        <div class="contenido">
+
+            <h2>3.2 Balanza de Pagos</h2>
+
+            <div class="imagenes">
+
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop">
+
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop">
+
+            </div>
+
+            <p>
+                La balanza de pagos registra todas las operaciones económicas
+                realizadas entre México y otros países.
+            </p>
+
+            <p>
+                Incluye exportaciones, importaciones, inversiones y pagos internacionales.
+            </p>
+
+            <button class="btn-regresar" onclick="volverMenu()">
+                Regresar al Menú
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- GASTO -->
+    <section class="pantalla-tema oculto" id="gasto">
+
+        <div class="contenido">
+
+            <h2>3.3 Gasto y Déficit Gubernamental</h2>
+
+            <div class="imagenes">
+
+                <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1200&auto=format&fit=crop">
+
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop">
+
+            </div>
+
+            <p>
+                El gasto gubernamental es el dinero utilizado por el gobierno
+                para educación, salud, seguridad e infraestructura.
+            </p>
+
+            <p>
+                El déficit aparece cuando el gobierno gasta más dinero del que recauda.
+            </p>
+
+            <button class="btn-regresar" onclick="volverMenu()">
+                Regresar al Menú
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- INFLACION -->
+    <section class="pantalla-tema oculto" id="inflacion">
+
+        <div class="contenido">
+
+            <h2>3.4 Inflación y Deflación</h2>
+
+            <div class="imagenes">
+
+                <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop">
+
+                <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1200&auto=format&fit=crop">
+
+            </div>
+
+            <p>
+                La inflación es el aumento general de precios de productos y servicios.
+            </p>
+
+            <p>
+                La deflación es la disminución de precios, aunque puede afectar la economía.
+            </p>
+
+            <button class="btn-regresar" onclick="volverMenu()">
+                Regresar al Menú
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- CONSTITUCION -->
+    <section class="pantalla-tema oculto" id="constitucion">
+
+        <div class="contenido">
+
+            <h2>4.1 Constitución Política de los E.U.M.</h2>
+
+            <div class="imagenes">
+
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200&auto=format&fit=crop">
+
+                <img src="https://images.unsplash.com/photo-1528747008803-3c1fefb0b8c4?q=80&w=1200&auto=format&fit=crop">
+
+            </div>
+
+            <p>
+                La Constitución Mexicana es la ley máxima del país y protege
+                los derechos de los ciudadanos.
+            </p>
+
+            <p>
+                También organiza los poderes Ejecutivo, Legislativo y Judicial.
+            </p>
+
+            <button class="btn-regresar" onclick="volverMenu()">
+                Regresar al Menú
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- SITUACION -->
+    <section class="pantalla-tema oculto" id="situacion">
+
+        <div class="contenido">
+
+            <h2>4.2 La Situación Política en México</h2>
+
+            <div class="imagenes">
+
+                <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=1200&auto=format&fit=crop">
+
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop">
+
+            </div>
+
+            <p>
+                México es una república democrática donde los ciudadanos
+                eligen a sus gobernantes mediante elecciones.
+            </p>
+
+            <p>
+                Existen retos políticos relacionados con corrupción y seguridad.
+            </p>
+
+            <button class="btn-regresar" onclick="volverMenu()">
+                Regresar al Menú
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- PARTIDOS -->
+    <section class="pantalla-tema oculto" id="partidos">
+
+        <div class="contenido">
+
+            <h2>4.3 Los Partidos Políticos</h2>
+
+            <div class="imagenes">
+
+                <img src="https://images.unsplash.com/photo-1541872705-1f73c6400ec9?q=80&w=1200&auto=format&fit=crop">
+
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop">
+
+            </div>
+
+            <p>
+                Los partidos políticos representan ideas y propuestas para gobernar el país.
+            </p>
+
+            <p>
+                Participan en elecciones y representan distintos sectores sociales.
+            </p>
+
+            <button class="btn-regresar" onclick="volverMenu()">
+                Regresar al Menú
+            </button>
+
+        </div>
+
+    </section>
+
+     <!-- FOOTER -->
+    <footer>
+
+        <h3>Proyecto del parcial</h3>
+
+        <p>
+            Elaborado por Enrique Lira
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
