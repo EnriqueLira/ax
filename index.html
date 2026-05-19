@@ -79,22 +79,21 @@
                 <h3>Partidos Políticos</h3>
             </div>
 
+            <!-- NUEVOS BOTONES -->
+
             <div class="tema" onclick="mostrarTema('datos')">
-                <i class="fa-solid fa-people-group"></i>
-                <h3>Datos personales</h3>
+                <i class="fa-solid fa-id-card"></i>
+                <h3>Datos Personales</h3>
             </div>
 
-            <div class="tema" onclick="mostrarTema('bibliografias')">
-                <i class="fa-solid fa-people-group"></i>
-                <h3>Bibliografias</h3>
+            <div class="tema" onclick="mostrarTema('bibliografia')">
+                <i class="fa-solid fa-book"></i>
+                <h3>Bibliografía</h3>
             </div>
-
 
         </div>
 
     </section>
-
-    <!-- TEMAS -->
 
     <!-- COMERCIO -->
     <section class="pantalla-tema oculto" id="comercio">
@@ -113,13 +112,7 @@
 
             <p>
                 El comercio exterior consiste en el intercambio de productos y servicios
-                entre diferentes países. México exporta automóviles, petróleo,
-                productos agrícolas y electrónicos.
-            </p>
-
-            <p>
-                También importa tecnología, maquinaria y materias primas para
-                fortalecer la economía nacional.
+                entre diferentes países.
             </p>
 
             <button class="btn-regresar" onclick="volverMenu()">
@@ -146,12 +139,8 @@
             </div>
 
             <p>
-                La balanza de pagos registra todas las operaciones económicas
-                realizadas entre México y otros países.
-            </p>
-
-            <p>
-                Incluye exportaciones, importaciones, inversiones y pagos internacionales.
+                La balanza de pagos registra las operaciones económicas
+                entre México y otros países.
             </p>
 
             <button class="btn-regresar" onclick="volverMenu()">
@@ -179,11 +168,7 @@
 
             <p>
                 El gasto gubernamental es el dinero utilizado por el gobierno
-                para educación, salud, seguridad e infraestructura.
-            </p>
-
-            <p>
-                El déficit aparece cuando el gobierno gasta más dinero del que recauda.
+                para educación, salud y seguridad.
             </p>
 
             <button class="btn-regresar" onclick="volverMenu()">
@@ -213,10 +198,6 @@
                 La inflación es el aumento general de precios de productos y servicios.
             </p>
 
-            <p>
-                La deflación es la disminución de precios, aunque puede afectar la economía.
-            </p>
-
             <button class="btn-regresar" onclick="volverMenu()">
                 Regresar al Menú
             </button>
@@ -241,12 +222,7 @@
             </div>
 
             <p>
-                La Constitución Mexicana es la ley máxima del país y protege
-                los derechos de los ciudadanos.
-            </p>
-
-            <p>
-                También organiza los poderes Ejecutivo, Legislativo y Judicial.
+                La Constitución Mexicana es la ley máxima del país.
             </p>
 
             <button class="btn-regresar" onclick="volverMenu()">
@@ -274,11 +250,7 @@
 
             <p>
                 México es una república democrática donde los ciudadanos
-                eligen a sus gobernantes mediante elecciones.
-            </p>
-
-            <p>
-                Existen retos políticos relacionados con corrupción y seguridad.
+                eligen a sus gobernantes.
             </p>
 
             <button class="btn-regresar" onclick="volverMenu()">
@@ -308,10 +280,6 @@
                 Los partidos políticos representan ideas y propuestas para gobernar el país.
             </p>
 
-            <p>
-                Participan en elecciones y representan distintos sectores sociales.
-            </p>
-
             <button class="btn-regresar" onclick="volverMenu()">
                 Regresar al Menú
             </button>
@@ -321,43 +289,70 @@
     </section>
 
     <!-- DATOS PERSONALES -->
-        <div id="datos" class="seccion">
-        <div class="card">
+    <section class="pantalla-tema oculto" id="datos">
+
+        <div class="contenido">
 
             <h2>Datos Personales</h2>
 
-                <p><b>Nombre:</b> Hernández Lira José Enrique</p>
+            <p><b>Nombre:</b> Hernández Lira José Enrique</p>
 
-                <p><b>Carrera:</b> Ingeniería en Sistemas Computacionales</p>
+            <p><b>Carrera:</b> Ingeniería en Sistemas Computacionales</p>
 
-                <p><b>Materia:</b> Recursos y Necesidades de México</p>
+            <p><b>Materia:</b> Recursos y Necesidades de México</p>
 
-                <p><b>Facultad:</b> Facultad de Ingeniería</p>
+            <p><b>Facultad:</b> Facultad de Ingeniería</p>
 
-                <button class="btn-regresar" onclick="volverMenu()">
-                Regresar al Menú
+            <button class="btn-regresar" onclick="volverMenu()">
+                Regresar
             </button>
 
         </div>
+
+    </section>
+
+    <!-- BIBLIOGRAFIA -->
+    <section class="pantalla-tema oculto" id="bibliografia">
+
+        <div class="contenido">
+
+            <h2>Bibliografía</h2>
+
+            <ul class="lista-biblio">
+
+                <li>
+                    Google Classroom. Recursos y materiales de clase.
+                </li>
+
+                <li>
+                    Para Todo México. Estados de México.
+                </li>
+
+            </ul>
+
+            <div class="links">
+
+                <a href="https://classroom.google.com/u/1/c/ODM4NzQzNzYyNjY5"
+                target="_blank">
+                    Ir a Google Classroom
+                </a>
+
+                <a href="https://paratodomexico.com/estados-de-mexico/"
+                target="_blank">
+                    Ir al sitio
+                </a>
+
+            </div>
+
+            <button class="btn-regresar" onclick="volverMenu()">
+                Regresar
+            </button>
+
         </div>
 
-    <!-- BIBLIOGRAFÍA -->
-            <div id="bibliografia" class="seccion">
-            <div class="card">
-                <h2>Bibliografía</h2>
-                <ul>
-                    <li>Google Classroom. (s.f.). <i>Recursos y materiales de clase</i>. Recuperado de <a href="https://classroom.google.com/u/1/c/ODM4NzQzNzYyNjY5" target="_blank">https://classroom.google.com/u/1/c/ODM4NzQzNzYyNjY5</a></li>
-                  <li>Para Todo México. (s.f.). <i>Estados de México</i>. Recuperado de <a href="https://paratodomexico.com/estados-de-mexico/" target="_blank">https://paratodomexico.com/estados-de-mexico/</a></li>
-                </ul>
+    </section>
 
-                 <button class="btn-regresar" onclick="volverMenu()">
-                Regresar al Menú
-            </button>
-  </div>
-</div>
-
-
-     <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
 
         <h3>Proyecto del parcial</h3>
@@ -371,4 +366,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
